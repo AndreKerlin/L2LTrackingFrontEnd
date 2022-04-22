@@ -1,0 +1,165 @@
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-6547311-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-6547311-5');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title - L2 Brands,LLC-Shipping</title>
+    <link href="~/Images/favicon.png" rel="shortcut icon" type="image/x-icon" />
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+</head>
+
+<body>
+    <script src="https://unpkg.com/core-js-bundle@3.6.5/minified.js">
+    </script>
+    <script src="https://unpkg.com/zone.js@0.11.2/dist/zone.min.js">
+    </script>
+    <script>
+        var appLocation = './';
+        var boilerplatePath = '';
+        var systemJsMap = {
+            "@ag-grid-community/angular": "https://unpkg.com/@ag-grid-community/angular@27.2.1/",
+            "@ag-grid-community/core/dist/styles": "https://unpkg.com/@ag-grid-community/core@27.2.1/dist/styles",
+            "ag-grid-angular": "https://unpkg.com/ag-grid-angular@27.2.1/",
+            "ag-grid-community": "https://unpkg.com/ag-grid-community@27.2.1/",
+            "ag-grid-enterprise": "https://unpkg.com/ag-grid-enterprise@27.2.1/"
+        };
+        var systemJsPaths = {
+            "@ag-grid-community/client-side-row-model": "https://unpkg.com/@ag-grid-community/client-side-row-model@27.2.1/dist/client-side-row-model.cjs.min.js",
+            "@ag-grid-community/core": "https://unpkg.com/@ag-grid-community/core@27.2.1/dist/core.cjs.min.js",
+            "@ag-grid-community/csv-export": "https://unpkg.com/@ag-grid-community/csv-export@27.2.1/dist/csv-export.cjs.min.js",
+            "@ag-grid-community/infinite-row-model": "https://unpkg.com/@ag-grid-community/infinite-row-model@27.2.1/dist/infinite-row-model.cjs.min.js"
+        };
+    </script>
+    <script src="https://unpkg.com/systemjs@0.19.47/dist/system.js">
+    </script>
+    <script src="systemjs.config.js">
+    </script>
+    <script>System.import('main.ts').catch(function(err) { console.error(err); });</script>
+    <div class="container-fluid pb-1 wideContainer">
+        <!-- header -->
+        <div class="container-fluid wideContainer">
+            <div class="row w-100">
+                <div class="col-md-12 headerrepeat w-100">
+                    <div class="header">
+                        <span class="navbar navbar-brand" style="font-size: 20px;padding-bottom: 10px; line-height: 10px; "><img style="width:50px; height: 50px;" src="../../Images/ShortcutIcon.png" />&nbsp;L2 Brands, LLC - Shipping</span>
+                        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                
+               
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <mat-icon style="line-height: 30px; height:30px; position: absolute; ">home</mat-icon><a href="/" style="line-height: 35px; height:30px; padding-left:20px;">&nbsp;Home</a>
+                                </li>
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <!-- menu -->
+        
+    </div>
+
+<!-- Home page content -->
+
+
+    <div id="viewHome" class="d-none">
+        
+        <div class="row">
+            <div class="col-md-12">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <i class="oi oi-globe"></i>&nbsp;View Existing Tracking Number Assignment
+                    </div>
+                    <div class="card-body">
+                        <mat-grid-list [cols]="1" rowHeight="15rem" gutterSize="5px">
+                            <mat-grid-tile [rowspan]="1" >
+                                
+                                <div class="card" style="width:100%; ">
+                                    <div class="card-header card-light-header">
+                                        <div class="d-flex">
+                                            <div>
+                                                &nbsp;Search by Authorization ID, Shipper ID, or PO Number
+                                            </div>
+                                            <a data-toggle="collapse" href="#collapseOne" title="Toggle Visibility" class=" flex-grow-1 float-right">
+                                                <i class="oi oi-chevron-bottom float-right" style="color: white;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                   <mat-grid-list [cols]="4" rowHeight="12rem" >
+                                       <mat-grid-tile [rowspan]="1">
+
+                                       
+
+                                        <div style="width:80%">
+                                            <h1>Authorization ID</h1>
+                                            <input style="width:100%" type="text" id="fname" name="fname" value="{{AuthID}}" placeholder="Click Here to Enter Authorization ID">
+                                        </div>
+                                                
+                                       </mat-grid-tile>
+
+                                       <mat-grid-tile [rowspan]="1">
+                                            <div style="width:80%">
+                                                <h1>Tracking Number</h1>
+                                                <input style="width:100%" type="text" id="fname" name="fname" value="{{TrackNo}}" placeholder="Click Here to Enter Tracking Number">
+                                            </div>
+                                        </mat-grid-tile>
+
+                                        <mat-grid-tile [rowspan]="1">
+                                            <div style="width:80%">
+                                                <h1>Shipper ID</h1>
+                                                <input style="width:100%" type="text" id="fname" name="fname" value="{{ShipperID}}" placeholder="Click Here to Enter Shipper ID">
+                                            </div>
+                                        </mat-grid-tile>
+
+                                        <mat-grid-tile [rowspan]="1">
+                                            
+                                            <button class="btn btn-secondary btn-sm w-100 mb-2" style="width:30%; font-size:16px;" role="button">Reset</button><div style="padding-left:5px;"></div>
+                                            
+                                            <button *ngIf="this.AuthID" class="btn btn-secondary btn-sm w-100 mb-2" style="width:30%; font-size:16px; background-color: green;" (click)='performAuthIDSearch(AuthID)' role="button">Search</button>
+                                            <button *ngIf="this.ShipperID" class="btn btn-secondary btn-sm w-100 mb-2" style="width:30%; font-size:16px; background-color: green;" (click)='performShipperIDSearch(ShipperID)' role="button">Search</button>
+                                            <button *ngIf="this.TrackNo" class="btn btn-secondary btn-sm w-100 mb-2" style="width:30%; font-size:16px; background-color: green;" (click)='performTrackNoSearch(TrackNo)' role="button">Search</button>
+
+                                        </mat-grid-tile>
+                                   </mat-grid-list>
+                                </div>
+                            
+                            </mat-grid-tile>
+                            
+                            
+                            
+                            
+                        </mat-grid-list>
+                    
+         
+                    </div>
+
+                    <div >
+                        <ag-grid-angular #agGrid style="width: 100%; height: 480px;" class="ag-theme-balham"
+                          [rowData]="this.searchResults"
+                          [columnDefs]="columnDefs"
+                          [defaultColDef]="defaultColumnDefs">
+                        </ag-grid-angular>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
